@@ -1,0 +1,37 @@
+<div class="container">
+    <h3 class="h3">Men's Fashion </h3>
+    <div class="row" *ngFor="let productL of productlist">
+            <!-- {{productL.name}} -->
+        <div class="col-md-3 col-sm-6" *ngFor="let productL2 of productL.products">
+            <div class="product-grid">
+
+                <div class="product-image" *ngFor="let productL3 of productL2.mainImages">
+                    <a routerLink="/detail/{{productL2.id}}">
+                        <img class="pic-1" src="{{productL3.url}}">
+                        <img class="pic-2" src="{{productL3.url2}}">
+                    </a>
+                    <div *ngIf="productL2.oldPrice > 0; then percentShow else percentHide"></div>
+                    <ng-template #percentShow>
+                        <span class="product-new-label">Sale</span>
+                        <span class="product-discount-label">{{ (((productL2.oldPrice -
+                            productL2.price)/productL2.oldPrice) ) | percent:'1.0-2'}} </span>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">{{productL2.title}}</a></h3>
+                            <div class="price">{{productL2.price | currency}}
+                                <span>{{productL2.oldPrice | currency}}</span>
+                            </div>
+                            <!-- <a class="add-to-cart" href="">+ Add To Cart</a> -->
+                        </div>
+                    </ng-template>
+                    <ng-template #percentHide>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">{{productL2.title}}</a></h3>
+                            <div class="price">{{productL2.price | currency}}</div>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>

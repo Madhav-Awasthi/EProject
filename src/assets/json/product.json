@@ -1,0 +1,66 @@
+[
+    {
+        "id": 0,
+        "category": "men",
+        "products": [
+            {
+                "id": 0,
+                "title": "T Shirt",
+                "price": 25,
+                "oldPrice": 0,
+
+                "mainImages": [
+                    {
+                        "id": "0",
+                        "imageName": "T Shirt",
+                        "url": "./assets/images/tshirt.jpg",
+                        "url2": "./assets/images/tshirt2.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Shirt",
+                "price": 40,
+                "oldPrice": 50,
+                "mainImages": [
+                    {
+                        "id": "0",
+                        "imageName": "Shirt",
+                        "url": "./assets/images/shirt.jpeg",
+                        "url2": "./assets/images/shirt2.jpeg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Jeans",
+                "price": 100,
+                "oldPrice": 110,
+                "mainImages": [
+                    {
+                        "id": "0",
+                        "imageName": "Jeans",
+                        "url": "./assets/images/jeans.jpeg",
+                        "url2": "./assets/images/jeans2.jpeg"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Shoes",
+                "price": 50,
+                "oldPrice": 60,
+                "mainImages": [
+                    {
+                        "id": "0",
+                        "imageName": "Shoes",
+                        "url": "./assets/images/shoes.JPG",
+                        "url2": "./assets/images/shoes2.JPG"
+                    }
+                ]
+            }
+        ]
+    }
+
+]
